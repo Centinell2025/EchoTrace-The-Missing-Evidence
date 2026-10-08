@@ -3,6 +3,7 @@
 import csv
 import hashlib
 import sys
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,7 +36,7 @@ def main():
                 errors.append("EMPTY CSV: " + rel)
     q = ROOT / "submission/student/QUESTIONS.md"
     if q.exists():
-        questions = [line for line in q.read_text().splitlines() if line[:2].strip(".").isdigit() and line[1:3] == ". "]
+        questions = [line for line in q.read_text().splitlines() if re.match(r"^\\d+\\. ", line)]
         if len(questions) != 10:
             errors.append("EXPECTED 10 questions, found " + str(len(questions)))
     for e in errors:
