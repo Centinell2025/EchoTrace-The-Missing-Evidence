@@ -55,3 +55,7 @@ The investigation must answer four business-critical questions:
 Development and playtest stage. Student-facing evidence may be developed here while public. Instructor solutions, expected answers, flags, and the final HTB writeup must remain private.
 
 **Beacon of the Eagle LLC — Centinell Suite Defense**
+
+
+---
+**Ethical and educational use / Uso ético y educativo:** This is a fictional or simulated defensive cybersecurity training exercise. Test only systems you own or are explicitly authorized to assess. / Ejercicio de ciberseguridad defensiva ficticio o simulado. Realice pruebas solo en sistemas propios o con autorización expresa. See / Consulte [Educational Purpose Notice](EDUCATIONAL_PURPOSE_NOTICE.md).
